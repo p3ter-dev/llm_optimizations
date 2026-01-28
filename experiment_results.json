@@ -1,0 +1,51 @@
+[
+  {
+    "model_name": "Baseline",
+    "accuracy": 97.67,
+    "inference_time": 8.409347772598267,
+    "model_size_mb": 2.1645889282226562,
+    "num_parameters": 567434
+  },
+  {
+    "model_name": "MoE (4 experts, top-2)",
+    "accuracy": 97.72,
+    "inference_time": 12.444011211395264,
+    "model_size_mb": 4.679267883300781,
+    "num_parameters": 1226638
+  },
+  {
+    "model_name": "Baseline + PTQ",
+    "accuracy": 97.65,
+    "inference_time": 8.838379383087158,
+    "model_size_mb": 0.5437698364257812,
+    "num_parameters": 0
+  },
+  {
+    "model_name": "MoE + PTQ",
+    "accuracy": 97.72,
+    "inference_time": 12.697225093841553,
+    "model_size_mb": 1.1776504516601562,
+    "num_parameters": 0
+  },
+  {
+    "model_name": "KD (Baseline Teacher)",
+    "accuracy": 97.65,
+    "inference_time": 9.158981800079346,
+    "model_size_mb": 0.8970108032226562,
+    "num_parameters": 235146
+  },
+  {
+    "model_name": "KD (MoE Teacher)",
+    "accuracy": 97.51,
+    "inference_time": 8.61412525177002,
+    "model_size_mb": 0.8970108032226562,
+    "num_parameters": 235146
+  },
+  {
+    "model_name": "KD + PTQ",
+    "accuracy": 97.65,
+    "inference_time": 8.39865493774414,
+    "model_size_mb": 0.22540283203125,
+    "num_parameters": 0
+  }
+]
