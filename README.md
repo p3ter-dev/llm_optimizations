@@ -21,7 +21,7 @@ This project explores three key optimization techniques for neural networks:
 └── README.md                 # This file
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
