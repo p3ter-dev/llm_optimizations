@@ -67,7 +67,6 @@ This will generate:
 - `pareto_frontier.png` - Optimal models in accuracy-size-speed space
 - `comparison_bars.png` - Bar charts comparing all metrics
 - `normalized_comparison.png` - Radar chart showing normalized performance
-- `insights.txt` - Key insights for your report
 
 ## Understanding the Implementations
 
