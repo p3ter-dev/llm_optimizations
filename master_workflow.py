@@ -11,7 +11,6 @@ The script will:
 2. Train or load all models
 3. Run comprehensive experiments
 4. Generate visualizations
-5. Create analysis files for your report
 """
 
 import os
