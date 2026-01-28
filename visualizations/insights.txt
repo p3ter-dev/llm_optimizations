@@ -1,0 +1,51 @@
+======================================================================
+KEY INSIGHTS FOR TECHNICAL REPORT
+======================================================================
+
+1. HIGHEST ACCURACY:
+   MoE (4 experts, top-2): 97.72%
+   (+0.05% vs baseline)
+
+2. SMALLEST MODEL:
+   KD + PTQ: 0.23 MB
+   (89.6% size reduction vs baseline)
+   Accuracy: 97.65% (-0.02% vs baseline)
+
+3. FASTEST INFERENCE:
+   KD + PTQ: 8.40s
+   (1.00x speedup vs baseline)
+   Accuracy: 97.65% (-0.02% vs baseline)
+
+4. BEST OVERALL TRADE-OFF:
+   KD + PTQ
+   Efficiency Score: 9.61
+   (combines accuracy retention, size reduction, and speed)
+
+5. MoE ANALYSIS:
+   MoE (4 experts, top-2):
+     Parameters: +116.2% vs baseline
+     Accuracy: 97.72% (+0.05%)
+   MoE + PTQ:
+     Parameters: +-100.0% vs baseline
+     Accuracy: 97.72% (+0.05%)
+   KD (MoE Teacher):
+     Parameters: +-58.6% vs baseline
+     Accuracy: 97.51% (-0.16%)
+
+6. QUANTIZATION (PTQ) ANALYSIS:
+   Baseline + PTQ:
+     Size reduction: 74.9%
+     Accuracy change: -0.02%
+
+7. KNOWLEDGE DISTILLATION ANALYSIS:
+   KD (Baseline Teacher):
+     Parameter reduction: 58.6%
+     Accuracy: 97.65% (-0.02% vs baseline)
+   KD (MoE Teacher):
+     Parameter reduction: 58.6%
+     Accuracy: 97.51% (-0.16% vs baseline)
+   KD + PTQ:
+     Parameter reduction: 100.0%
+     Accuracy: 97.65% (-0.02% vs baseline)
+
+======================================================================
