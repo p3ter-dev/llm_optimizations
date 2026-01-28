@@ -26,8 +26,6 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 
-from baseline_mnist import *
-
 # Import our implementations
 from baseline_mnist import BaselineFFN, train_baseline
 from kd_mnist import StudentFFN, distill_knowledge
