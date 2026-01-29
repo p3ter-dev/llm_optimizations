@@ -158,7 +158,7 @@ class ExperimentRunner:
             model, _ = train_moe(num_experts=4, top_k=2, epochs=5)
         else:
             if not os.path.exists(checkpoint_path):
-                print(f"⚠️  Checkpoint {checkpoint_path} not found!")
+                print(f"Checkpoint {checkpoint_path} not found!")
                 print("Training MoE model instead...")
                 model, _ = train_moe(num_experts=4, top_k=2, epochs=5)
             else:
@@ -432,10 +432,10 @@ def main():
             missing_checkpoints.append(checkpoint)
 
     if missing_checkpoints:
-        print(f"\n⚠️  {len(missing_checkpoints)} checkpoint(s) missing.")
+        print(f"\n{len(missing_checkpoints)} checkpoint(s) missing.")
         print("These will be trained automatically even in 'load' mode.")
     else:
-        print("\n✓ All checkpoints found!")
+        print("\nAll checkpoints found!")
 
     print("\nDo you want to train new models or use existing checkpoints?")
     print("(Training new models will take ~15-20 minutes)")
