@@ -426,9 +426,9 @@ def main():
     missing_checkpoints = []
     for checkpoint, description in checkpoints.items():
         if os.path.exists(checkpoint):
-            print(f"  ✓ Found: {checkpoint} ({description})")
+            print(f" Found: {checkpoint} ({description})")
         else:
-            print(f"  ✗ Missing: {checkpoint} ({description})")
+            print(f" Missing: {checkpoint} ({description})")
             missing_checkpoints.append(checkpoint)
 
     if missing_checkpoints:
